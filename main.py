@@ -29,7 +29,7 @@ for groups in emailRegex.findall(text):
 if len(matches) > 0:
 	joined = '\n'.join(matches)
 	pyperclip.copy(joined)
-	print("Скопійовано в буфер обміну:")
+	print("Copied to clipboard:")
 	print(joined)
 else:
-	print("Не знайшов телефоні номери чи електроні пошти")
+	print("No phone numbers or email addresses found")
